@@ -29,6 +29,8 @@
 	<link rel="stylesheet" href="plugins/slick-carousel/slick/slick-theme.css">
 	<!-- Main Stylesheet -->
 	<link rel="stylesheet" href="css/style.css">
+	<!-- Asciinema player-->
+	<link rel="stylesheet" type="text/css" href="plugins/asciinema/asciinema-player.css" />
 
 		
 </head>
@@ -48,7 +50,7 @@ Welcome Slider
 		</div> -->
 		<h1>Rair</h1>
 		<p>Rair is a modern, high performance reverse engineering framework designed for both manual and automated analysis. </p>
-		<a data-scroll href="#" class="btn btn-transparent">Quick Start</a>
+		<a data-scroll href="#quick-start" class="btn btn-transparent">Quick Start</a>
 		<a data-scroll href="#" class="btn btn-transparent">Documentation</a>
 	</div>
 </section>	
@@ -90,7 +92,7 @@ Welcome Slider
             <ul id="nav" class="nav navbar-nav navigation-menu">
                 <li><a data-scroll href="#body">Home</a></li>
                 <li><a data-scroll href="#about">About</a></li>
-                <li><a data-scroll href="#services">Quick Start</a></li>
+                <li><a data-scroll href="#quick-start">Quick Start</a></li>
                 <li><a data-scroll href="#portfolio">Documentation</a></li>
                 <li><a data-scroll href="#community">Community</a></li>
                 
@@ -120,8 +122,26 @@ Welcome Slider
 				</div>
 				<!-- /section title -->
 				<h2 align="center">Rair is experimental reverse engineering framework written in Rust. It is designed to be reliable, fast and flexible. Rair comes with Rust API as well as interactive radare2-like command line interface. Rair is tested on 32/64 bit Linux, 32/64 bit Windows, 64-bit macOS as well as amd64 and arm64 Android.</h2>
-
-
+					
+			</div> 		<!-- End row -->
+		</div>   	<!-- End container -->
+	</section>   <!-- End section -->
+	
+	<section class="bg-one about section" id="quick-start">
+		<div class="container">
+			<div class="row">
+				
+				<!-- section title -->
+				<div class="title text-center wow fadeIn" data-wow-duration="1500ms" >
+					<h2>Quick <span class="color">Start</span> </h2>
+					<div class="border"></div>
+				</div>
+				<!-- /section title -->
+				<asciinema-player idle-time-limit=2 font-size=medium rows= 22 cols=200 src="getstarted.cast"></asciinema-player>
+					
+			</div> 		<!-- End row -->
+		</div>   	<!-- End container -->
+	</section>   <!-- End section -->
 	
 
 
@@ -217,7 +237,7 @@ Welcome Slider
 							<h3 class="ddd">Build Community</h3>								
 							<p>Join our Discord server, help answering questions, maintain community of users and devs.</p>
 							<br>
-							<a class="btn btn-transparent" href="https://camo.githubusercontent.com/da1dff6f212c321e9fe1788ee40083a0c1a066d7/68747470733a2f2f696d672e736869656c64732e696f2f646973636f72642f3633343133333339363433393639353338323f7374796c653d706c6173746963">Discord</a>
+							<a class="btn btn-transparent" href="https://github.com/Rair-Project">Discord</a>
 						</div>
 					</div>
 				</div> 
@@ -258,7 +278,6 @@ Welcome Slider
 		<script type="text/javascript" src="js/script.js"></script>
 
 		<script src="https://kit.fontawesome.com/a076d05399.js"></script>
-
-
+		<script src="plugins/asciinema/asciinema-player.js"></script>
 	</body>
 </html>
