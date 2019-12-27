@@ -1,237 +1,200 @@
-
 <!DOCTYPE html>
+<html lang="en">
 
 <head>
-
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta name="description" content="">
-	
-
 	<title>Rair | Reverse Engineering Framework</title>
-		
-		
 	<!-- Favicon -->
 	<!-- <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png" /> -->
-	
-	<!-- CSS
-	================================================== -->
+	<!-- CSS -->
 	<!-- Fontawesome Icon font -->
 	<link rel="stylesheet" href="plugins/themefisher-font/style.css">
 	<!-- bootstrap.min css -->
 	<link rel="stylesheet" href="plugins/bootstrap/dist/css/bootstrap.min.css">
 	<!-- Animate.css -->
 	<link rel="stylesheet" href="plugins/animate-css/animate.css">
-	<!-- Magnific popup css -->
-	<link rel="stylesheet" href="plugins/magnific-popup/dist/magnific-popup.css">
-	<!-- Slick Carousel -->
-	<link rel="stylesheet" href="plugins/slick-carousel/slick/slick.css">
-	<link rel="stylesheet" href="plugins/slick-carousel/slick/slick-theme.css">
-	<!-- Main Stylesheet -->
-	<link rel="stylesheet" href="css/style.css">
 	<!-- Asciinema player-->
 	<link rel="stylesheet" type="text/css" href="plugins/asciinema/asciinema-player.css" />
-
-		
+	<!-- Main Stylesheet -->
+	<link rel="stylesheet" href="css/style.css">
 </head>
 
-	
+
 <body id="body" data-spy="scroll" data-target=".navbar" data-offset="50">
 
- <!--
-Welcome Slider
-==================================== -->
+	<!--Hero Area-->
+	<section class="hero-area">
+		<div class="block">
+			<h1>Rair</h1>
+			<p>
+				Rair is a modern, high performance reverse engineering
+				framework designed for both manual and automated analysis.
+			</p>
+			<a data-scroll href="#quick-start" class="btn btn-transparent">Quick Start</a>
+			<a data-scroll href="#documentation" class="btn btn-transparent">Documentation</a>
+		</div>
+	</section>
 
-<section class="hero-area">
-	<div class="block">
-		<!-- <div class="video-button">
-			<i class="tf-ion-play"></i>
+	<!--Sticky Navigation-->
+	<header id="navigation" class="navbar navigation">
+		<div class="container">
+			<div class="navbar-header">
+				<!-- responsive nav button -->
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<!-- /responsive nav button -->
+				<!-- logo -->
+				<a class="navbar-brand logo" href="#body">
+					<!-- <img src="images/logo.png" alt="Website Logo" /> -->
+					<!-- <svg></svg> -->
+					Rair
+				</a>
+				<!-- /logo -->
+			</div>
+			<!-- main nav -->
+			<nav class="collapse navbar-collapse navbar-right">
+				<ul id="nav" class="nav navbar-nav navigation-menu">
+					<li><a data-scroll href="#body">Home</a></li>
+					<li><a data-scroll href="#about">About</a></li>
+					<li><a data-scroll href="#quick-start">Quick Start</a></li>
+					<li><a data-scroll href="#documentation">Documentation</a></li>
+					<li><a data-scroll href="#community">Community</a></li>
 
-		</div> -->
-		<h1>Rair</h1>
-		<p>Rair is a modern, high performance reverse engineering framework designed for both manual and automated analysis. </p>
-		<a data-scroll href="#quick-start" class="btn btn-transparent">Quick Start</a>
-		<a data-scroll href="#documentation" class="btn btn-transparent">Documentation</a>
-	</div>
-</section>	
-
-
-<!-- 
-  Fixed Navigation
-  ==================================== -->
-    <header id="navigation" class="navbar navigation">
-        <div class="container">
-            <div class="navbar-header">
-              <!-- responsive nav button -->
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <!-- /responsive nav button -->
-    
-                <!-- logo -->
-                <a class="navbar-brand logo" href="#body">
-                    <!-- <img src="images/logo.png" alt="Website Logo" /> -->
-                    <svg width="40px" height="40px" viewBox="0 0 45 44" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                            <g id="Group" transform="translate(2.000000, 2.000000)" stroke="#57CBCC" stroke-width="3">
-                                <ellipse id="Oval" cx="20.5" cy="20" rx="20.5" ry="20"></ellipse>
-                                <path d="M6,7 L33.5,34.5" id="Line-2" stroke-linecap="square"></path>
-                                <path d="M21,20 L34,7" id="Line-3" stroke-linecap="square"></path>
-                            </g>
-                        </g>
-                    </svg>
-                </a>
-            <!-- /logo -->
-        </div>
-
-        <!-- main nav -->
-        <nav class="collapse navbar-collapse navbar-right" role="Navigation">
-            <ul id="nav" class="nav navbar-nav navigation-menu">
-                <li><a data-scroll href="#body">Home</a></li>
-                <li><a data-scroll href="#about">About</a></li>
-                <li><a data-scroll href="#quick-start">Quick Start</a></li>
-                <li><a data-scroll href="#documentation">Documentation</a></li>
-                <li><a data-scroll href="#community">Community</a></li>
-                
-            </ul>
-        </nav>
-        <!-- /main nav -->
-  
-      </div>
-  </header>
-  <!--
-  End Fixed Navigation
-  ==================================== -->
+				</ul>
+			</nav>
+			<!-- /main nav -->
+		</div>
+	</header>
 
 
 
-<!--
-		Start About Section
-		==================================== -->
+	<!--About Section-->
 	<section class="bg-one about section" id="about">
 		<div class="container">
 			<div class="row">
-				
+
 				<!-- section title -->
-				<div class="title text-center wow fadeIn" data-wow-duration="1500ms" >
+				<div class="title text-center wow fadeIn" data-wow-duration="1500ms">
 					<h2>About <span class="color">Rair</span> </h2>
 					<div class="border"></div>
 				</div>
 				<!-- /section title -->
-				<h2 align="center">Rair is experimental reverse engineering framework written in Rust. It is designed to be reliable, fast and flexible. Rair comes with Rust API as well as interactive radare2-like command line interface. Rair is tested on 32/64 bit Linux, 32/64 bit Windows, 64-bit macOS as well as amd64 and arm64 Android.</h2>
-					
-			</div> 		<!-- End row -->
-		</div>   	<!-- End container -->
-	</section>   <!-- End section -->
+				<h2 align="center">
+					Rair is experimental reverse engineering framework
+					written in Rust. It is designed to be reliable,
+					fast and flexible. Rair comes with Rust API as well
+					as interactive radare2-like command line interface.
+					Rair is tested on 32/64 bit Linux, 32/64 bit Windows, 64-bit
+					macOS as well as amd64 and arm64 Android.
+				</h2>
+			</div>
+		</div>
+	</section>
 
 
-<!-- Start quick start
-		=========================================== -->
-		
+	<!-- Quick start Section -->
+
 	<section class="parallax-section section section-bg overly" id="quick-start">
 		<div class="container">
 			<div class="row">
-				
+
 				<!-- section title -->
-				<div class="title text-center wow fadeIn" data-wow-duration="1500ms" >
+				<div class="title text-center wow fadeIn" data-wow-duration="1500ms">
 					<h2>Quick <span class="color">Start</span> </h2>
 					<div class="border"></div>
 				</div>
 				<!-- /section title -->
 				<div>
-					<asciinema-player idle-time-limit=2 rows= 23 cols=140 src="getstarted.cast"></asciinema-player>
+					<asciinema-player idle-time-limit=2 rows=23 cols=140 src="getstarted.cast"></asciinema-player>
 				</div>
-				
-			</div> 		<!-- End row -->
-		</div>   	<!-- End container -->
-	</section>   <!-- End section -->
-	
-				<!-- <div class="all-post text-center">
-					<a href="#quick-start" class="btn btn-main" >View All Podcast</a>
-				</div> -->
+			</div>
+		</div>
+	</section>
 
 
-<!-- Start Team Skills
-		=========================================== -->
-		
-		<section id="documentation" class="parallax-section section section-bg overly">
-			<div class="container">
-				<div class="row" >
-					<!-- section title -->
-					<div class="col-md-12">
-						<div class="title text-center">
-							<h2>Rair <span class="color">Documentation</span></h2>
-							<div class="border"></div>
+	<!-- Documentation -->
+
+	<section id="documentation" class="parallax-section section section-bg overly">
+		<div class="container">
+			<div class="row">
+				<!-- section title -->
+				<div class="col-md-12">
+					<div class="title text-center">
+						<h2>Rair <span class="color">Documentation</span></h2>
+						<div class="border"></div>
+					</div>
+				</div>
+				<!-- /section title -->
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+					<article class="wow fadeInUp" data-wow-duration="500ms">
+						<div class="service-block text-center">
+							<div class="service-icon text-center">
+								<a href="https://rair-project.github.io/rair-core/"><i class="tf-document3"></i></a>
+							</div>
+							<h3>API Docs</h3>
+							<a class="btn btn-transparent" href="https://rair-project.github.io/rair-core/">Master
+								branch</a>
 						</div>
-					</div>
-					<!-- /section title -->
-				</div>  		<!-- End row -->
-				<div class="row">
-					<div class="col-md-6">
-						<article class="wow fadeInUp" data-wow-duration="500ms">
-							<div class="service-block text-center">
-								<div class="service-icon text-center">
-									<a href="https://rair-project.github.io/rair-core/"><i class="tf-document3"></i></a>
-								</div>
-								<h3>API Docs</h3>
-								<p>Lorem ipsum dolor sit amet, consectetur.. Sed id lorem eget orci dictum facilisis vel id tellus. Nullam iaculis arcu at mauris dapibus consectetur.</p>
-							</div>
-						</article>
-					</div>
-					<div class="col-md-6">
-						<article class="wow fadeInUp" data-wow-duration="500ms">
-							<div class="service-block text-center">
-								<div class="service-icon text-center">
-									<a href="#"><i class="tf-ion-ios-book"></i></a>
-								</div>
-								<h3>Rair Book</h3>
-								<p>Lorem ipsum dolor sit amet, consectetur.. Sed id lorem eget orci dictum facilisis vel id tellus. Nullam iaculis arcu at mauris dapibus consectetur.</p>
-							</div>
-						</article>
-					</div>
+					</article>
 				</div>
-			</div>   	<!-- End container -->
-		</section>   <!-- End section -->
+				<div class="col-md-6">
+					<article class="wow fadeInUp" data-wow-duration="500ms">
+						<div class="service-block text-center">
+							<div class="service-icon text-center">
+								<a href="#"><i class="tf-ion-ios-book"></i></a>
+							</div>
+							<h3>Rair Book</h3>
+							<a class="btn btn-transparent">Coming Soon!</a>
+						</div>
+					</article>
+				</div>
+			</div>
+		</div>
+	</section>
 
-<!--
-		Start Community Section
-		==================================== -->
+	<!--Community Section-->
 	<section class="bg-one about section" id="community">
 		<div class="container">
 			<div class="row">
 				<!-- section title -->
-				<div class="title text-center wow fadeIn" data-wow-duration="1500ms" >
-					<h2>Rair <span class="color">Community</span> </h2>
+				<div class="title text-center wow fadeIn" data-wow-duration="1500ms">
+					<h2>Call for <span class="color">Contributors</span> </h2>
 					<div class="border"></div>
 				</div>
 				<!-- /section title -->
-					
+
 				<!-- community item -->
-				<div class="col-md-4 text-center wow fadeInUp" data-wow-duration="500ms" >
-					<div class="block">							
+				<div class="col-md-4 text-center wow fadeInUp" data-wow-duration="500ms">
+					<div class="block">
 						<div class="icon-box">
 							<i class="tf-document3"></i>
-						</div>					
+						</div>
 						<!-- Express community Yourself -->
 						<div class="content text-center">
 							<h3 class="ddd">Improve API (Docs)</h3>
-							<p>Help new developers use  Rair API. Provide a set of best practices for Developers and contributors.</p>
+							<p>Help new developers use Rair API. Provide a set of best practices for Developers and
+								contributors.</p>
 							<br>
 							<a class="btn btn-transparent" href="https://rair-project.github.io/rair-core/">API Docs</a>
 						</div>
 					</div>
-				</div> 
-					<!-- End community item -->
+				</div>
+				<!-- End community item -->
 
 				<!-- community item -->
-				<div class="col-md-4 text-center wow fadeInUp" data-wow-duration="500ms" >
-					<div class="block">							
+				<div class="col-md-4 text-center wow fadeInUp" data-wow-duration="500ms">
+					<div class="block">
 						<div class="icon-box">
 							<i class="tf-ion-social-github"></i>
-						</div>					
+						</div>
 						<!-- Express community Yourself -->
 						<div class="content text-center">
 							<h3 class="ddd">Write Code</h3>
@@ -240,95 +203,100 @@ Welcome Slider
 							<a class="btn btn-transparent" href="https://github.com/Rair-Project/rair-core">GitHub</a>
 						</div>
 					</div>
-				</div> 
-					<!-- End community item -->
+				</div>
+				<!-- End community item -->
 
 				<!-- community item -->
-				<div class="col-md-4 text-center wow fadeInUp" data-wow-duration="500ms" >
-					<div class="block">							
+				<div class="col-md-4 text-center wow fadeInUp" data-wow-duration="500ms">
+					<div class="block">
 						<div class="icon-box">
 							<i class="tf-ion-ios-book"></i>
-						</div>					
+						</div>
 						<!-- Express community Yourself -->
 						<div class="content text-center">
-							<h3 class="ddd">The Rair Book</h3>								
-							<p>You enjoy technical writing? Perfect! After all, we want people to know how to use the crazy stuff we are building. </p>
+							<h3 class="ddd">The Rair Book</h3>
+							<p>You enjoy technical writing? Perfect! After all, we want people to know how to use the
+								crazy stuff we are building. </p>
 							<br>
-							<a class="btn btn-transparent" href="https://github.com/rair-project/rair-book">Rair Book</a>
+							<a class="btn btn-transparent" href="https://github.com/rair-project/rair-book">Rair
+								Book</a>
 						</div>
 					</div>
-				</div> 
-					<!-- End community item -->
-				
+				</div>
+				<!-- End community item -->
+
 				<!-- community item -->
-				<div class="col-md-4 text-center wow fadeInUp" data-wow-duration="500ms" >
-					<div class="block">							
+				<div class="col-md-4 text-center wow fadeInUp" data-wow-duration="500ms">
+					<div class="block">
 						<div class="icon-box">
 							<i class="tf-ion-checkmark"></i>
-						</div>					
+						</div>
 						<!-- Express community Yourself -->
 						<div class="content text-center">
-							<h3 class="ddd">QA and Testing</h3>								
+							<h3 class="ddd">QA and Testing</h3>
 							<p>We believe if it's not tested, it must be broken.</p>
 							<br>
-							<a class="btn btn-transparent" href="https://codecov.io/gh/Rair-Project/rair-core">GitHub</a>
+							<a class="btn btn-transparent"
+								href="https://codecov.io/gh/Rair-Project/rair-core">GitHub</a>
 						</div>
 					</div>
-				</div> 
-					<!-- End community item -->
-				
+				</div>
+				<!-- End community item -->
+
 				<!-- community item -->
-				<div class="col-md-4 text-center wow fadeInUp" data-wow-duration="500ms" >
-					<div class="block">							
+				<div class="col-md-4 text-center wow fadeInUp" data-wow-duration="500ms">
+					<div class="block">
 						<div class="icon-box">
 							<i class="fab fa-discord"></i>
-						</div>					
+						</div>
 						<!-- Express community Yourself -->
 						<div class="content text-center">
-							<h3 class="ddd">Build Community</h3>								
-							<p>Join our Discord server, help answering questions, maintain community of users and devs.</p>
+							<h3 class="ddd">Build Community</h3>
+							<p>Join our Discord server, help answering questions, maintain community of users and devs.
+							</p>
 							<br>
 							<a class="btn btn-transparent" href="https://github.com/Rair-Project">Discord</a>
 						</div>
 					</div>
-				</div> 
-					<!-- End community item -->
-					
-			</div> 		<!-- End row -->
-		</div>   	<!-- End container -->
-	</section>   <!-- End section -->
+				</div>
+				<!-- End community item -->
+
+			</div> <!-- End row -->
+		</div> <!-- End container -->
+	</section> <!-- End section -->
 
 
 
 
-		<!-- 
+	<!-- 
 		Essential Scripts
 		=====================================-->
-		
-		<!-- Main jQuery -->
-		<script src="plugins/jquery/dist/jquery.min.js"></script>
-		<!-- Bootstrap 3.1 -->
-		<script src="plugins/bootstrap/dist/js/bootstrap.min.js"></script>
-		<!-- Slick Carousel -->
-		<script src="plugins/slick-carousel/slick/slick.min.js"></script>
-		<!-- Portfolio Filtering -->
-		<script src="plugins/mixitup/dist/mixitup.min.js"></script>
-		<!-- Smooth Scroll -->
-		<script src="plugins/smooth-scroll/dist/js/smooth-scroll.min.js"></script>
-		<!-- Magnific popup -->
-		<script src="plugins/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
-		<!-- Google Map API -->
-		<!-- <script  src="http://maps.google.com/maps/api/js?sensor=false"></script> -->
-		<!-- Sticky Nav -->
-		<script src="plugins/Sticky/jquery.sticky.js"></script>
-		<!-- Number Counter Script -->
-		<script src="plugins/count-to/jquery.countTo.js"></script>
-		<!-- wow.min Script -->
-		<script src="plugins/wow/dist/wow.min.js"></script>
-		<!-- Custom js -->
-		<script src="js/script.js"></script>
 
-		<script src="https://kit.fontawesome.com/a076d05399.js"></script>
-		<script src="plugins/asciinema/asciinema-player.js"></script>
-	</body>
+	<!-- Main jQuery -->
+	<script src="plugins/jquery/dist/jquery.min.js"></script>
+	<!-- Bootstrap 3.1 -->
+	<script src="plugins/bootstrap/dist/js/bootstrap.min.js"></script>
+	<!-- Slick Carousel -->
+	<script src="plugins/slick-carousel/slick/slick.min.js"></script>
+	<!-- Portfolio Filtering -->
+	<script src="plugins/mixitup/dist/mixitup.min.js"></script>
+	<!-- Smooth Scroll -->
+	<script src="plugins/smooth-scroll/dist/js/smooth-scroll.min.js"></script>
+	<!-- Magnific popup -->
+	<script src="plugins/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
+	<!-- Google Map API -->
+	<!-- <script  src="http://maps.google.com/maps/api/js?sensor=false"></script> -->
+	<!-- Sticky Nav -->
+	<script src="plugins/Sticky/jquery.sticky.js"></script>
+	<!-- Number Counter Script -->
+	<script src="plugins/count-to/jquery.countTo.js"></script>
+	<!-- wow.min Script -->
+	<script src="plugins/wow/dist/wow.min.js"></script>
+	<!-- Custom js -->
+	<script src="js/script.js"></script>
+
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+	<script src="plugins/asciinema/asciinema-player.js"></script>
+</body>
+
 </html>
